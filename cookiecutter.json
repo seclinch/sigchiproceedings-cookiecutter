@@ -1,0 +1,8 @@
+{
+    "working_title": "A SIGCHI Paper",
+    "paper_slug": "{{ cookiecutter.working_title|lower|replace(\"'\", '')|replace('\"', '')|replace('?', '')|replace('!', '')|replace(':', '')|replace(' ', '-')|truncate(30, True, '') }}",
+    "figures_dir": "figures",
+    "sections_dir": "sections",
+    "inputs_dir": "other_inputs",
+    "version_control": ["hg->regexp", "hg->glob", "git->glob"]
+}

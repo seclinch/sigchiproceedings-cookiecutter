@@ -1,0 +1,15 @@
+% Paper anonymisation
+\newif\ifanon
+\anontrue
+
+% Paper metadata
+\def\plaintitle{{ '{' }}{{cookiecutter.working_title}}}
+
+\ifanon
+    \def\plainauthor{}
+\else
+    \def\plainauthor{First Author, Second Author, Third Author}
+\fi
+    
+\def\plainkeywords{.}
+\def\plaingeneralterms{Documentation, Standardization}

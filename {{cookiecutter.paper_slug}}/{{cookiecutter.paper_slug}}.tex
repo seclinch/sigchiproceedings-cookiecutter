@@ -1,0 +1,46 @@
+\documentclass{sigchi}
+
+\input{{ '{' }}{{cookiecutter.inputs_dir}}/0a_copyright}
+
+% Arabic page numbers for submission.  Remove this line to eliminate
+% page numbers for the camera ready copy
+% \pagenumbering{arabic}
+
+\input{{ '{' }}{{cookiecutter.inputs_dir}}/0b_packages}
+\input{{ '{' }}{{cookiecutter.inputs_dir}}/0c_macros}
+\input{{ '{' }}{{cookiecutter.inputs_dir}}/0d_metadata}
+\input{{ '{' }}{{cookiecutter.inputs_dir}}/0e_url_papersize_hyperref}
+
+% End of preamble. Here it comes the document.
+\begin{document}
+
+\title{\plaintitle}
+
+\input{{ '{' }}{{cookiecutter.inputs_dir}}/0f_authors}
+
+\maketitle
+
+\input{{ '{' }}{{cookiecutter.sections_dir}}/0_abstract}
+\input{{ '{' }}{{cookiecutter.sections_dir}}/1_intro}
+\input{{ '{' }}{{cookiecutter.sections_dir}}/2_related_work}
+\input{{ '{' }}{{cookiecutter.sections_dir}}/3_work_done}
+\input{{ '{' }}{{cookiecutter.sections_dir}}/4_evaluation_method}
+\input{{ '{' }}{{cookiecutter.sections_dir}}/5_evaluation_results}
+\input{{ '{' }}{{cookiecutter.sections_dir}}/6_evaluation_discussion}
+\input{{ '{' }}{{cookiecutter.sections_dir}}/7_conclusions}
+
+% BALANCE COLUMNS
+\balance{}
+
+% REFERENCES FORMAT
+% References must be the same font size as other body text.
+\bibliographystyle{SIGCHI-Reference-Format}
+\bibliography{{ '{' }}{{cookiecutter.paper_slug}}}
+
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
