@@ -1,8 +1,9 @@
 {
     "working_title": "A SIGCHI Paper",
-    "paper_slug": "{{ cookiecutter.working_title|lower|replace(\"'\", '')|replace('\"', '')|replace('?', '')|replace('!', '')|replace(':', '')|replace(' ', '-')|truncate(30, True, '') }}",
+    "paper_slug": "{{ cookiecutter.working_title|slug }}",
     "figures_dir": "figures",
     "sections_dir": "sections",
     "inputs_dir": "other_inputs",
-    "version_control": ["hg->regexp", "hg->glob", "git->glob"]
+    "version_control": ["hg->regexp", "hg->glob", "git->glob"],
+    "_extensions": ["jinja2_extensions.PaperTitleExtension"]
 }
